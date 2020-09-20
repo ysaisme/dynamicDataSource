@@ -15,3 +15,14 @@ DynamicDataSourceAspect 类切面处理
 DynamicDataSourceAspectMethod 方法切面处理
 
 需在启动类加上次注解@Import(DynamicDataSourceRegister.class)
+
+
+注解使用
+    @Override
+    @DataSource()
+    public List<SysUserDO> getSysUserList1() {
+        log.info("-> 获取用户列表1");
+        return sysUserDao.select(SysUserDO.builder()
+                .removeFlag(Boolean.FALSE)
+                .build());
+    }
