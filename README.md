@@ -1,5 +1,5 @@
 # dynamicDataSource
-springboot基于注解的动态切换数据源处理
+springboot基于注解的动态切换数据源处理 (多数据源)
 
 通过自定义注解@DataSource支持类级别，方法级别数据源的动态切换
 
